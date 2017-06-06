@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>white-shutdown-512.png</file>
+        <file>Command-Reset.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>logo.png</file>
+    </qresource>
+</RCC>
