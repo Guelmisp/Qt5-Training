@@ -10,6 +10,16 @@ S_S::S_S() : QWidget(){
 
 void S_S :: Message(){
 
-    QMessageBox::information(this, "Information", "Ola, este texto estava escondido");
+   bool ok;
+    QString password = QInputDialog::getText(this, "password", "Digite a senha: ", QLineEdit::Password, QString(), &ok);
+    if (ok && !password.isEmpty()){
+
+        QMessageBox::information(this, "Password Validated", "your password has been saved");
+
+    }
+    else {
+        QMessageBox::information(this, "error", "Password incorrect");
+
+    }
 
 }
